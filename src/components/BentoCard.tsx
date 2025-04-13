@@ -8,6 +8,7 @@ export const BentoCard = ({ src, title, description, isComingSoon } : { src: str
   
     const handleMouseMove = (event : any) => {
       if (!hoverButtonRef.current) return;
+        // @ts-ignore
       const rect = hoverButtonRef.current.getBoundingClientRect();
   
       setCursorPosition({
